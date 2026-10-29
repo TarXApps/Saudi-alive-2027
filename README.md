@@ -1,5 +1,6 @@
-# Liv Next, Saudi 2027
+# LIV NEXT Saudi 2027
 
-Website for Liv Next, Saudi 2027 — The Livability & Investment Exhibition (Connect Spot Exhibitions).
+Website for LIV NEXT Saudi 2027 (Connect Spot Exhibitions), Riyadh, 2027.
 
-Static single-page site (`index.html` + `hero-bg.mp4`). Deployed via Netlify, auto-publishing from this repo's `main` branch.
+- `main` branch: the live "Coming Soon" page (single static `index.html`, no build step). Hosted on Cloudflare Pages.
+- `full-site-v1` branch: the earlier full website draft (hero video, sections, sponsorship tiers), kept as a backup.
