@@ -3,210 +3,105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>LIV NEXT Saudi 2027</title>
-<meta name="description" content="LIV NEXT Saudi 2027: The Next Generation of Living. A new business exhibition and summit in Riyadh, 2027. Coming soon.">
-<meta name="theme-color" content="#ecd6b6">
-<meta property="og:title" content="LIV NEXT Saudi 2027 - Coming Soon">
-<meta property="og:description" content="The Next Generation of Living. Riyadh, 2027.">
+<title>LIV NEXT Saudi 2027 | The Next Generation of Living</title>
+<meta name="description" content="LIV NEXT Saudi 2027: the exhibition and summit connecting developers, industries and the experiences shaping quality of life in Saudi Arabia. Riyadh, 2027.">
+<meta name="theme-color" content="#0d3b34">
+<link rel="canonical" href="https://livnextsaudi.com/">
+<meta property="og:site_name" content="LIV NEXT Saudi 2027">
 <meta property="og:type" content="website">
+<meta property="og:title" content="LIV NEXT Saudi 2027 | The Next Generation of Living">
+<meta property="og:description" content="LIV NEXT Saudi 2027: the exhibition and summit connecting developers, industries and the experiences shaping quality of life in Saudi Arabia. Riyadh, 2027.">
+<meta property="og:url" content="https://livnextsaudi.com/">
+<meta property="og:image" content="https://livnextsaudi.com/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230d3b34'/%3E%3Cpath d='M8 44Q32 12 56 44Q32 28 8 44Z' fill='%23c9a14a'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Marcellus&display=swap" rel="stylesheet">
-<style>
-  /* Layout: one centred column on a dusk sky, skyline pinned to the foot of the page. */
-  :root {
-    --sky-top: #f3ede2;
-    --sky-mid: #ecd6b6;
-    --sky-low: #e8b988;
-    --glow: #fff4dc;
-    --ink: #0d3b34;
-    --ink-soft: #2f5a52;
-    --gold: #b38a3c;
-    --gold-ink: #7a5c1a;
-    --cream: #f6ecd6;
-    --font-display: 'Marcellus', 'Cormorant Garamond', Georgia, serif;
-    --font-body: 'Lato', 'Helvetica Neue', Arial, sans-serif;
-  }
-  *, *::before, *::after { box-sizing: border-box; }
-  html, body { height: 100%; }
-  body {
-    margin: 0;
-    background: var(--sky-low);
-    background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-mid) 52%, var(--sky-low) 100%);
-    color: var(--ink);
-    font-family: var(--font-body);
-    -webkit-font-smoothing: antialiased;
-  }
-  .page {
-    position: relative;
-    min-height: 100%;
-    min-height: 100svh;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    overflow: hidden;
-    padding-left: max(16px, env(safe-area-inset-left, 0px));
-    padding-right: max(16px, env(safe-area-inset-right, 0px));
-    background: radial-gradient(ellipse 60% 38% at 50% 100%, var(--glow) 0%, rgba(255,244,220,0) 70%);
-  }
-  .content {
-    align-self: center;
-    justify-self: center;
-    width: 100%;
-    max-width: 46rem;
-    padding-block: clamp(1.25rem, 5vh, 4rem) clamp(1rem, 3vh, 2.5rem);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .eyebrow {
-    margin: 0 0 clamp(.9rem, 3vh, 2.2rem);
-    font-size: .72rem;
-    font-weight: 700;
-    letter-spacing: .26em;
-    text-transform: uppercase;
-    color: var(--gold-ink);
-  }
-  .arc { display: block; width: min(86%, 30rem); height: auto; margin-bottom: .35rem; }
-  h1 { margin: 0; font-weight: 400; line-height: 1; }
-  .wordmark {
-    display: block;
-    font-family: var(--font-display);
-    font-size: clamp(2.5rem, min(12.5vw, 11.5vh), 6.6rem);
-    letter-spacing: .11em;
-    padding-left: .11em;
-    color: var(--ink);
-  }
-  .saudi {
-    display: block;
-    margin-top: .4rem;
-    font-family: var(--font-display);
-    font-size: clamp(1rem, min(3.6vw, 3.4vh), 1.9rem);
-    letter-spacing: .6em;
-    padding-left: .6em;
-    color: var(--ink);
-  }
-  .tagline {
-    margin: clamp(.8rem, 2.4vh, 1.8rem) 0 0;
-    font-family: var(--font-display);
-    font-size: clamp(1.1rem, min(3.2vw, 3.6vh), 1.7rem);
-    color: var(--ink);
-    text-wrap: balance;
-  }
-  .soon {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    max-width: 30rem;
-    margin: clamp(1.1rem, 3.4vh, 2.6rem) 0 clamp(.8rem, 2.4vh, 1.6rem);
-    font-size: .86rem;
-    font-weight: 700;
-    letter-spacing: .38em;
-    text-transform: uppercase;
-    color: var(--ink);
-  }
-  .soon::before, .soon::after { content: ""; flex: 1; height: 1px; background: var(--gold); }
-  .soon span { padding-left: .38em; white-space: nowrap; }
-  .lede {
-    margin: 0;
-    max-width: 30rem;
-    font-size: clamp(.98rem, 2.2vw, 1.08rem);
-    line-height: 1.6;
-    color: var(--ink-soft);
-    text-wrap: balance;
-  }
-  .where {
-    margin: clamp(.8rem, 2.2vh, 1.1rem) 0 0;
-    font-size: .76rem;
-    font-weight: 700;
-    letter-spacing: .24em;
-    text-transform: uppercase;
-    color: var(--gold-ink);
-  }
-  .cta { margin-top: clamp(1rem, 2.8vh, 2rem); display: flex; flex-direction: column; align-items: center; gap: .8rem; }
-  .button {
-    display: inline-block;
-    padding: .95rem 2rem;
-    background: var(--ink);
-    color: var(--cream);
-    border: 1px solid var(--ink);
-    border-radius: 2px;
-    font-size: .8rem;
-    font-weight: 700;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background-color .2s, color .2s;
-  }
-  .button:hover { background: var(--gold); border-color: var(--gold); color: var(--ink); }
-  .button:focus-visible, .mail:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
-  .mail { font-size: .92rem; color: var(--ink); text-underline-offset: 3px; overflow-wrap: anywhere; user-select: all; }
-  .stage { position: relative; line-height: 0; margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))) ; }
-  .skyline { display: block; width: 100%; height: clamp(120px, 22vh, 300px); }
-  .foot {
-    position: absolute;
-    left: 0; right: 0; bottom: 12px;
-    padding-inline: 16px;
-    text-align: center;
-    line-height: 1.3;
-    font-size: .68rem;
-    font-weight: 700;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    color: var(--cream);
-  }
-  @media (max-width: 480px) {
-    .soon { gap: .7rem; letter-spacing: .3em; font-size: .78rem; }
-    .saudi { letter-spacing: .5em; padding-left: .5em; }
-  }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.className+=' js'</script>
 </head>
 <body>
-<main class="page">
-  <section class="content">
-    <p class="eyebrow">The Exhibition &amp; Summit</p>
-    <svg class="arc" viewBox="0 0 520 54" aria-hidden="true" focusable="false"><path d="M0 50Q260 -8 520 50Q260 12 0 50Z" fill="#b38a3c"/></svg>
-    <h1><span class="wordmark">LIVNEXT</span><span class="saudi">SAUDI</span></h1>
-    <p class="tagline">The Next Generation of Living.</p>
-    <div class="soon" role="text"><span>Coming Soon</span></div>
-    <p class="lede">Connecting the industries, investments and experiences shaping quality of life in Saudi Arabia.</p>
-    <p class="where">Riyadh &middot; Saudi Arabia &middot; 2027</p>
-    <div class="cta">
-      <a class="button" href="mailto:info@connectspotexhibitions.com?subject=LIV%20NEXT%20Saudi%202027%20-%20Register%20my%20interest">Register your interest</a>
-      <a class="mail" href="mailto:info@connectspotexhibitions.com">info@connectspotexhibitions.com</a>
-    </div>
-  </section>
-  <div class="stage">
-    <svg class="skyline" viewBox="-2400 0 6400 420" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
-<g fill="#0d3b34" opacity="0.14"><rect x="-2400" y="220" width="64" height="190"/><rect x="-2330" y="272" width="46" height="138"/><rect x="-2281" y="205" width="50" height="205"/><rect x="-2225" y="187" width="57" height="223"/><rect x="-2164" y="229" width="49" height="181"/><rect x="-2106" y="270" width="38" height="140"/><rect x="-2057" y="184" width="61" height="226"/><rect x="-1983" y="178" width="37" height="232"/><rect x="-1939" y="168" width="34" height="242"/><rect x="-1899" y="204" width="42" height="206"/><rect x="-1846" y="254" width="48" height="156"/><rect x="-1795" y="213" width="59" height="197"/><rect x="-1723" y="269" width="36" height="141"/><rect x="-1683" y="252" width="63" height="158"/><rect x="-1614" y="277" width="68" height="133"/><rect x="-1542" y="175" width="34" height="235"/><rect x="-1494" y="202" width="43" height="208"/><rect x="-1440" y="184" width="70" height="226"/><rect x="-1367" y="178" width="53" height="232"/><rect x="-1305" y="287" width="56" height="123"/><rect x="-1242" y="223" width="44" height="187"/><rect x="-1194" y="199" width="64" height="211"/><rect x="-1120" y="227" width="37" height="183"/><rect x="-1079" y="165" width="47" height="245"/><rect x="-1022" y="205" width="39" height="205"/><rect x="-976" y="190" width="37" height="220"/><rect x="-932" y="213" width="41" height="197"/><rect x="-885" y="269" width="69" height="141"/><rect x="-810" y="172" width="63" height="238"/><rect x="-741" y="260" width="66" height="150"/><rect x="-664" y="218" width="35" height="192"/><rect x="-624" y="260" width="64" height="150"/><rect x="-558" y="195" width="37" height="215"/><rect x="-507" y="215" width="46" height="195"/><rect x="-448" y="282" width="40" height="128"/><rect x="-398" y="185" width="61" height="225"/><rect x="-324" y="290" width="63" height="120"/><rect x="-257" y="287" width="56" height="123"/><rect x="-190" y="232" width="46" height="178"/><rect x="-136" y="206" width="46" height="204"/><rect x="-82" y="202" width="38" height="208"/><rect x="-42" y="274" width="45" height="136"/><rect x="6" y="231" width="52" height="179"/><rect x="62" y="168" width="63" height="242"/><rect x="128" y="196" width="48" height="214"/><rect x="182" y="165" width="35" height="245"/><rect x="221" y="171" width="53" height="239"/><rect x="279" y="213" width="61" height="197"/><rect x="352" y="160" width="47" height="250"/><rect x="413" y="205" width="43" height="205"/><rect x="467" y="232" width="37" height="178"/><rect x="507" y="270" width="64" height="140"/><rect x="576" y="209" width="61" height="201"/><rect x="643" y="258" width="36" height="152"/><rect x="682" y="268" width="59" height="142"/><rect x="748" y="248" width="47" height="162"/><rect x="809" y="285" width="68" height="125"/><rect x="881" y="278" width="62" height="132"/><rect x="954" y="177" width="67" height="233"/><rect x="1032" y="234" width="37" height="176"/><rect x="1075" y="239" width="68" height="171"/><rect x="1146" y="177" width="69" height="233"/><rect x="1222" y="162" width="55" height="248"/><rect x="1282" y="242" width="59" height="168"/><rect x="1345" y="201" width="34" height="209"/><rect x="1384" y="239" width="67" height="171"/><rect x="1464" y="193" width="54" height="217"/><rect x="1527" y="274" width="55" height="136"/><rect x="1587" y="278" width="38" height="132"/><rect x="1638" y="278" width="42" height="132"/><rect x="1691" y="267" width="65" height="143"/><rect x="1765" y="256" width="40" height="154"/><rect x="1811" y="166" width="70" height="244"/><rect x="1894" y="193" width="55" height="217"/><rect x="1956" y="163" width="38" height="247"/><rect x="2001" y="167" width="57" height="243"/><rect x="2064" y="242" width="65" height="168"/><rect x="2140" y="229" width="48" height="181"/><rect x="2193" y="263" width="56" height="147"/><rect x="2255" y="248" width="52" height="162"/><rect x="2321" y="165" width="59" height="245"/><rect x="2386" y="223" width="60" height="187"/><rect x="2448" y="262" width="45" height="148"/><rect x="2503" y="280" width="63" height="130"/><rect x="2580" y="176" width="37" height="234"/><rect x="2622" y="265" width="50" height="145"/><rect x="2675" y="228" width="43" height="182"/><rect x="2724" y="180" width="69" height="230"/><rect x="2804" y="220" width="50" height="190"/><rect x="2864" y="246" width="36" height="164"/><rect x="2912" y="174" width="37" height="236"/><rect x="2962" y="269" width="41" height="141"/><rect x="3017" y="204" width="49" height="206"/><rect x="3078" y="262" width="43" height="148"/><rect x="3134" y="232" width="35" height="178"/><rect x="3171" y="225" width="68" height="185"/><rect x="3248" y="290" width="55" height="120"/><rect x="3311" y="285" width="39" height="125"/><rect x="3357" y="266" width="52" height="144"/><rect x="3412" y="252" width="45" height="158"/><rect x="3461" y="217" width="35" height="193"/><rect x="3505" y="195" width="36" height="215"/><rect x="3554" y="164" width="41" height="246"/><rect x="3607" y="206" width="43" height="204"/><rect x="3659" y="219" width="55" height="191"/><rect x="3727" y="205" width="46" height="205"/><rect x="3779" y="185" width="46" height="225"/><rect x="3835" y="256" width="63" height="154"/><rect x="3901" y="179" width="61" height="231"/><rect x="3970" y="203" width="58" height="207"/></g>
-<g fill="#0d3b34" opacity="0.3"><rect x="-2400" y="290" width="57" height="120"/><rect x="-2340" y="293" width="37" height="117"/><rect x="-2291" y="211" width="57" height="199"/><rect x="-2229" y="274" width="39" height="136"/><rect x="-2181" y="218" width="62" height="192"/><rect x="-2111" y="215" width="51" height="195"/><rect x="-2056" y="268" width="47" height="142"/><rect x="-2006" y="301" width="36" height="109"/><rect x="-1961" y="257" width="40" height="153"/><rect x="-1919" y="239" width="63" height="171"/><rect x="-1854" y="228" width="30" height="182"/><rect x="-1812" y="278" width="41" height="132"/><rect x="-1761" y="308" width="61" height="102"/><rect x="-1694" y="295" width="60" height="115"/><rect x="-1625" y="242" width="56" height="168"/><rect x="-1561" y="269" width="54" height="141"/><rect x="-1500" y="310" width="45" height="100"/><rect x="-1442" y="309" width="46" height="101"/><rect x="-1384" y="308" width="58" height="102"/><rect x="-1318" y="211" width="40" height="199"/><rect x="-1266" y="262" width="62" height="148"/><rect x="-1202" y="218" width="44" height="192"/><rect x="-1146" y="257" width="64" height="153"/><rect x="-1072" y="246" width="32" height="164"/><rect x="-1030" y="286" width="47" height="124"/><rect x="-972" y="294" width="38" height="116"/><rect x="-924" y="286" width="61" height="124"/><rect x="-861" y="240" width="61" height="170"/><rect x="-791" y="286" width="61" height="124"/><rect x="-727" y="290" width="54" height="120"/><rect x="-668" y="218" width="60" height="192"/><rect x="-602" y="271" width="45" height="139"/><rect x="-548" y="257" width="63" height="153"/><rect x="-483" y="262" width="61" height="148"/><rect x="-413" y="298" width="43" height="112"/><rect x="-364" y="216" width="47" height="194"/><rect x="-307" y="222" width="39" height="188"/><rect x="-266" y="296" width="37" height="114"/><rect x="-222" y="258" width="59" height="152"/><rect x="-153" y="259" width="60" height="151"/><rect x="-88" y="292" width="56" height="118"/><rect x="-20" y="302" width="49" height="108"/><rect x="42" y="229" width="59" height="181"/><rect x="107" y="247" width="57" height="163"/><rect x="177" y="245" width="32" height="165"/><rect x="211" y="216" width="61" height="194"/><rect x="285" y="248" width="30" height="162"/><rect x="318" y="287" width="46" height="123"/><rect x="368" y="235" width="47" height="175"/><rect x="428" y="241" width="61" height="169"/><rect x="503" y="253" width="64" height="157"/><rect x="579" y="223" width="61" height="187"/><rect x="648" y="224" width="57" height="186"/><rect x="716" y="221" width="64" height="189"/><rect x="792" y="252" width="36" height="158"/><rect x="840" y="250" width="45" height="160"/><rect x="887" y="283" width="56" height="127"/><rect x="954" y="236" width="32" height="174"/><rect x="999" y="242" width="54" height="168"/><rect x="1060" y="245" width="35" height="165"/><rect x="1101" y="234" width="48" height="176"/><rect x="1158" y="279" width="53" height="131"/><rect x="1219" y="265" width="36" height="145"/><rect x="1260" y="262" width="43" height="148"/><rect x="1307" y="249" width="34" height="161"/><rect x="1343" y="303" width="44" height="107"/><rect x="1400" y="248" width="51" height="162"/><rect x="1465" y="303" width="33" height="107"/><rect x="1507" y="295" width="39" height="115"/><rect x="1555" y="306" width="57" height="104"/><rect x="1626" y="279" width="37" height="131"/><rect x="1671" y="261" width="52" height="149"/><rect x="1733" y="254" width="60" height="156"/><rect x="1805" y="212" width="30" height="198"/><rect x="1848" y="260" width="63" height="150"/><rect x="1914" y="224" width="48" height="186"/><rect x="1975" y="309" width="54" height="101"/><rect x="2038" y="226" width="48" height="184"/><rect x="2100" y="225" width="42" height="185"/><rect x="2147" y="296" width="50" height="114"/><rect x="2207" y="217" width="61" height="193"/><rect x="2271" y="301" width="51" height="109"/><rect x="2325" y="251" width="56" height="159"/><rect x="2390" y="289" width="42" height="121"/><rect x="2436" y="225" width="34" height="185"/><rect x="2483" y="310" width="44" height="100"/><rect x="2531" y="212" width="44" height="198"/><rect x="2581" y="230" width="63" height="180"/><rect x="2655" y="211" width="63" height="199"/><rect x="2722" y="267" width="42" height="143"/><rect x="2767" y="302" width="36" height="108"/><rect x="2809" y="301" width="39" height="109"/><rect x="2851" y="216" width="41" height="194"/><rect x="2904" y="246" width="41" height="164"/><rect x="2950" y="238" width="49" height="172"/><rect x="3001" y="301" width="51" height="109"/><rect x="3056" y="308" width="36" height="102"/><rect x="3102" y="281" width="41" height="129"/><rect x="3145" y="307" width="48" height="103"/><rect x="3196" y="269" width="33" height="141"/><rect x="3241" y="262" width="48" height="148"/><rect x="3297" y="249" width="39" height="161"/><rect x="3350" y="257" width="53" height="153"/><rect x="3411" y="259" width="47" height="151"/><rect x="3470" y="280" width="54" height="130"/><rect x="3532" y="309" width="33" height="101"/><rect x="3574" y="280" width="46" height="130"/><rect x="3631" y="287" width="38" height="123"/><rect x="3680" y="248" width="37" height="162"/><rect x="3730" y="215" width="41" height="195"/><rect x="3784" y="265" width="34" height="145"/><rect x="3832" y="309" width="51" height="101"/><rect x="3897" y="275" width="58" height="135"/><rect x="3958" y="253" width="63" height="157"/></g>
-
-<rect x="860" y="176" width="26" height="230" fill="#0d3b34" opacity=".9"/>
-<rect x="1010" y="210" width="34" height="200" fill="#0d3b34" opacity=".88"/>
-<rect x="1050" y="168" width="22" height="240" fill="#0d3b34" opacity=".9"/>
-<path d="M600 400V250L640 232V400Z" fill="#0d3b34" opacity=".9"/>
-<path d="M1085 400V236L1130 220V400Z" fill="#0d3b34" opacity=".88"/>
-
-<path fill="#0d3b34" d="M668 400V190L734 140V400Z"/>
-<path d="M668 230L734 196M668 270L734 236M668 310L734 276M668 350L734 316" stroke="#c9a14a" stroke-width="1.2" opacity=".5" fill="none"/>
-
-<path fill="#0d3b34" fill-rule="evenodd" d="M768 400V104Q768 62 800 62Q832 62 832 104V400Z M783 190Q800 88 817 190Z"/>
-<rect x="783" y="176" width="34" height="5" fill="#0d3b34"/>
-
-<path fill="#0d3b34" d="M905 400L944 150L950 54L956 150L995 400Z"/>
-<circle cx="950" cy="132" r="11" fill="#c9a14a"/>
-<path d="M930 400L946 200M970 400L954 200" stroke="#c9a14a" stroke-width="1.2" opacity=".55" fill="none"/>
-
-
-<g transform="translate(-620 0)">
-<path d="M-80 352Q190 222 560 318Q380 296 240 332Q120 360 -80 352Z" fill="#f8f1e3"/>
-<path d="M-80 352Q190 222 560 318" stroke="#c9a14a" stroke-width="2" fill="none"/>
-</g>
-
-<rect x="-2400" y="350" width="6400" height="80" fill="#0d3b34"/>
-</svg>
-    <p class="foot">Organised by Connect Spot Exhibitions</p>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="LIV NEXT Saudi, home"><svg viewBox="0 0 520 54" aria-hidden="true" focusable="false"><path d="M0 50Q260 -8 520 50Q260 12 0 50Z" fill="#b38a3c"/></svg><span class="w1">LIVNEXT</span><span class="w2">SAUDI</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="sectors.html">Sectors</a><a href="programme.html">Programme</a><a href="exhibit.html">Exhibit</a><a href="sponsor.html">Sponsor</a><a href="contact.html">Contact</a><a class="btn" href="contact.html#register">Register Now</a></nav>
   </div>
+</header>
+<main id="main">
+
+<section class="hero on-dark">
+  <img src="assets/img/hero-district-canal.webp" width="2400" height="1340" alt="Families walking beside a reflecting canal in a landscaped Riyadh district at sunset, with the Kingdom Centre skyline in the distance." loading="eager" fetchpriority="high" decoding="async">
+  <div class="wrap"><div class="inner">
+    <p class="eyebrow">Living is evolving.</p>
+    <h1 class="h1">The Next Generation of Living.</h1>
+    <p class="sub">The exhibition and summit connecting developers, industries and the experiences shaping quality of life in Saudi Arabia.</p>
+    <p class="where">Riyadh &middot; Kingdom of Saudi Arabia &middot; 2027</p>
+    <div class="actions"><a class="btn gold" href="contact.html#register">Register Now</a><a class="btn ghost" href="sectors.html">Explore the sectors</a></div>
+  </div></div>
+</section>
+
+<section class="section tint" aria-labelledby="targets">
+  <div class="wrap">
+    <div class="section-head reveal"><p class="eyebrow">Planning targets for the inaugural event</p><h2 class="h2" id="targets">The event in one sentence</h2>
+    <p class="lead">LIVNEXT Saudi is a focused B2B exhibition and summit connecting developers, asset owners, operators and public-sector stakeholders with the solutions that make places healthier, more connected, more memorable and more sustainable.</p></div>
+    <div class="stats reveal"><div class="stat"><b>120+</b><span>Exhibitors</span></div><div class="stat"><b>5,000+</b><span>Trade visitors</span></div><div class="stat"><b>50+</b><span>Speakers</span></div><div class="stat"><b>3</b><span>Days</span></div></div>
+    <p class="note">Launch figures are indicative organizer planning targets, not confirmed event statistics.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="pillars">
+  <div class="wrap">
+    <div class="section-head reveal"><p class="eyebrow">Six pillars / The next generation of living</p><h2 class="h2" id="pillars">The next generation of living is also the next generation of opportunity.</h2></div>
+    <div class="grid c3"><a class="card reveal" href="sectors.html#smart-living"><div class="pic"><img src="assets/img/sector-smart-living.webp" width="1600" height="893" alt="Two residents talking on a rooftop terrace at dusk, with lanterns, olive trees and a smart display on the wall." loading="lazy" decoding="async"></div><div class="body"><p class="kicker">01 / 06 &middot; Live Connected</p><h3>Smart Living &amp; Developments</h3><p>Technology-enabled homes, complete neighbourhoods and effective community operations.</p></div></a><a class="card reveal" href="sectors.html#healthcare"><div class="pic"><img src="assets/img/sector-healthcare.webp" width="1600" height="893" alt="A doctor and a patient talking on a sofa in a bright hospital atrium while a nurse in scrubs looks on." loading="lazy" decoding="async"></div><div class="body"><p class="kicker">02 / 06 &middot; Live Well</p><h3>Modern Healthcare &amp; Wellbeing</h3><p>Prevention, accessible care and healthier neighbourhoods.</p></div></a><a class="card reveal" href="sectors.html#mobility"><div class="pic"><img src="assets/img/sector-mobility.webp" width="1600" height="893" alt="Passengers boarding a modern tram at a shaded station in Riyadh at dusk." loading="lazy" decoding="async"></div><div class="body"><p class="kicker">03 / 06 &middot; Live in Motion</p><h3>Public &amp; Community Mobility</h3><p>Connected public transport, walkable access and accessible movement.</p></div></a><a class="card reveal" href="sectors.html#education"><div class="pic"><img src="assets/img/sector-education.webp" width="1536" height="1024" alt="Four students working on laptops around a round table in a bright learning space with tiered seating." loading="lazy" decoding="async"></div><div class="body"><p class="kicker">04 / 06 &middot; Live &amp; Learn</p><h3>Future Education &amp; Skills</h3><p>Adaptable learning environments, digital education and skills.</p></div></a><a class="card reveal" href="sectors.html#culture"><div class="pic"><img src="assets/img/sector-culture.webp" width="1536" height="1024" alt="Guests sharing Arabic coffee on rugs beside a mud-brick fort at dusk, with lanterns and traditional performers behind." loading="lazy" decoding="async"></div><div class="body"><p class="kicker">05 / 06 &middot; Live Inspired</p><h3>Culture, Heritage &amp; Experiences</h3><p>Heritage, creative industries and memorable experiences in everyday life.</p></div></a><a class="card reveal" href="sectors.html#sustainability"><div class="pic"><img src="assets/img/sector-sustainability.webp" width="1536" height="1024" alt="Green-roofed buildings with solar canopies beside a stream and native planting, with mountains in the distance." loading="lazy" decoding="async"></div><div class="body"><p class="kicker">06 / 06 &middot; Live Sustainably</p><h3>Resilient, Low-Impact Communities</h3><p>Green buildings, water efficiency and resilient public spaces.</p></div></a></div>
+    <div class="actions"><a class="btn line" href="sectors.html">See who exhibits and who visits</a></div>
+  </div>
+</section>
+
+<section class="section dark" aria-labelledby="experiences">
+  <div class="wrap">
+    <div class="section-head reveal"><p class="eyebrow">More than a conventional exhibition</p><h2 class="h2" id="experiences">The future of living should be something you can experience.</h2></div>
+    <div class="grid c4"><div class="card reveal"><div class="pic"><img src="assets/img/feature-living-district.webp" width="1200" height="800" alt="An evening pedestrian district with fountains, shaded seating and families strolling." loading="lazy" decoding="async"></div><div class="body"><p class="kicker">01 / The Living District</p><p>A developer-led showcase of connected, healthy, walkable and sustainable communities.</p></div></div><div class="card reveal"><div class="pic"><img src="assets/img/feature-future-living-lab.webp" width="1200" height="800" alt="Visitors at an exhibition stand watching a presenter explain a scale model of a home." loading="lazy" decoding="async"></div><div class="body"><p class="kicker">02 / Future Living Lab</p><p>Live demonstrations of smart-living, healthcare, mobility and environmental technologies.</p></div></div><div class="card reveal"><div class="pic"><img src="assets/img/feature-operators-brief.webp" width="1200" height="800" alt="Seven professionals in discussion around a large round table with a view of Riyadh." loading="lazy" decoding="async"></div><div class="body"><p class="kicker">03 / The Operator&#x27;s Brief</p><p>Open sector discussions where owners and operators share implementation priorities.</p></div></div><div class="card reveal"><div class="pic"><img src="assets/img/feature-life-economy-exchange.webp" width="1200" height="800" alt="Professionals meeting and shaking hands in a lounge overlooking the city." loading="lazy" decoding="async"></div><div class="body"><p class="kicker">04 / Life Economy Exchange</p><p>An open setting for B2B meetings, introductions and conversations across sectors.</p></div></div></div>
+    <p class="note">Proposed features, subject to venue, partner support and operational planning.</p>
+  </div>
+</section>
+
+<section class="section tint" aria-labelledby="agenda">
+  <div class="wrap">
+    <div class="section-head reveal"><p class="eyebrow">Summit programme</p><h2 class="h2" id="agenda">Three days. One forward agenda.</h2>
+    <p class="lead">A practical summit moving from vision and development to operations, experiences and long-term impact.</p></div>
+    <div class="grid c3">
+      <div class="card plain reveal"><span class="num">01</span><h3>The places we create</h3><p>Development, liveability &amp; connected communities</p></div>
+      <div class="card plain reveal"><span class="num">02</span><h3>The experiences we enable</h3><p>Health, education, culture &amp; community life</p></div>
+      <div class="card plain reveal"><span class="num">03</span><h3>The future we sustain</h3><p>Mobility, resilience &amp; lasting value</p></div>
+    </div>
+    <div class="actions"><a class="btn line" href="programme.html">View the programme</a></div>
+  </div>
+</section>
+<section class="band on-dark">
+  <img src="assets/img/closing-waterfall.webp" width="1536" height="1024" alt="A waterfall and pool in a landscaped park at sunset, with mountains behind and a family seated on a bench." loading="lazy" decoding="async">
+  <div class="wrap reveal"><p class="eyebrow">The Next Generation of Living.</p><h2>Be part of what comes next.</h2><p>Exhibit. Sponsor. Build new connections. Help shape a better generation of places, experiences and everyday life.</p>
+  <div class="actions"><a class="btn gold" href="contact.html#register">Register Now</a><a class="btn ghost" href="exhibit.html">Exhibit</a><a class="btn ghost" href="sponsor.html">Sponsor</a></div></div>
+</section>
 </main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html" aria-label="LIV NEXT Saudi, home"><svg viewBox="0 0 520 54" aria-hidden="true" focusable="false"><path d="M0 50Q260 -8 520 50Q260 12 0 50Z" fill="#b38a3c"/></svg><span class="w1">LIVNEXT</span><span class="w2">SAUDI</span></a>
+        <p class="tagline">The Next Generation of Living.</p>
+        <p>Riyadh &middot; Kingdom of Saudi Arabia &middot; 2027</p>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="sectors.html">Sectors</a></li><li><a href="programme.html">Programme</a></li><li><a href="exhibit.html">Exhibit</a></li><li><a href="sponsor.html">Sponsor</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul>
+        <li>Organised by Connect Spot Exhibitions</li>
+        <li><a href="mailto:info@connectspotexhibitions.com">info@connectspotexhibitions.com</a></li>
+        <li><a href="contact.html#register">Register Now</a></li></ul></div>
+    </div>
+    <div class="legal"><span>&copy; LIV NEXT Saudi 2027. All rights reserved.</span><span>Images are illustrative concept visuals.</span></div>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>

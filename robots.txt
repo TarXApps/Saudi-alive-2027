@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://livnextsaudi.com/sitemap.xml
