@@ -36,6 +36,46 @@
     items.forEach(function (el) { el.classList.add('in'); });
   }
 
+  // Hero video: two silent clips, crossfaded in turn. Skipped for reduced motion and data saver.
+  var media = document.querySelector('.hero-media');
+  if (media) {
+    var vids = [].slice.call(media.querySelectorAll('video'));
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var save = navigator.connection && navigator.connection.saveData;
+    if (vids.length && !reduce && !save) {
+      var small = window.matchMedia('(max-width: 760px)').matches;
+      var cur = 0, paused = false, FADE = 1.3;
+      var toggle = document.querySelector('.hero-toggle');
+      var show = function (n) { vids.forEach(function (v, k) { v.classList.toggle('on', k === n); }); };
+      var start = function (n) {
+        var v = vids[n];
+        cur = n;
+        try { v.currentTime = 0; } catch (e) {}
+        var p = v.play();
+        if (p && p.then) { p.then(function () { if (cur === n) show(n); }).catch(function () {}); } else { show(n); }
+      };
+      vids.forEach(function (v, k) {
+        v.muted = true;
+        v.src = small ? v.getAttribute('data-m') : v.getAttribute('data-d');
+        v.addEventListener('timeupdate', function () {
+          if (k === cur && !paused && vids.length > 1 && v.duration && v.duration - v.currentTime < FADE) start((k + 1) % vids.length);
+        });
+        v.addEventListener('ended', function () { if (k === cur && !paused) start((k + 1) % vids.length); });
+      });
+      start(0);
+      if (toggle) {
+        toggle.hidden = false;
+        toggle.addEventListener('click', function () {
+          paused = !paused;
+          toggle.setAttribute('aria-pressed', paused ? 'true' : 'false');
+          toggle.textContent = paused ? 'Play video' : 'Pause video';
+          var v = vids[cur];
+          if (paused) { v.pause(); } else { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+        });
+      }
+    }
+  }
+
   // Enquiry form: opens the visitor's email app with the details filled in.
   var form = document.getElementById('enquiry');
   if (form) {

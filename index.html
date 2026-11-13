@@ -32,7 +32,12 @@
 <main id="main">
 
 <section class="hero on-dark">
-  <img src="assets/img/hero-district-canal.webp" width="2400" height="1340" alt="Families walking beside a reflecting canal in a landscaped Riyadh district at sunset, with the Kingdom Centre skyline in the distance." loading="eager" fetchpriority="high" decoding="async">
+  <div class="hero-media" aria-hidden="true">
+    <img src="assets/video/hero-poster.webp" width="1920" height="1080" alt="" fetchpriority="high" decoding="async">
+    <video muted playsinline preload="auto" tabindex="-1" data-d="assets/video/hero-1.mp4" data-m="assets/video/hero-1-m.mp4"></video>
+    <video muted playsinline preload="auto" tabindex="-1" data-d="assets/video/hero-2.mp4" data-m="assets/video/hero-2-m.mp4"></video>
+  </div>
+  <button class="hero-toggle" type="button" aria-pressed="false" hidden>Pause video</button>
   <div class="wrap"><div class="inner">
     <p class="eyebrow">Living is evolving.</p>
     <h1 class="h1">The Next Generation of Living.</h1>
