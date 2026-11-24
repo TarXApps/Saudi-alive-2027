@@ -76,13 +76,15 @@
     }
   }
 
-  // Enquiry form: opens the visitor's email app with the details filled in.
+  // Enquiry form: saved to the organiser's enquiries sheet (Exhibitors / Visitors tabs).
+  // If the sheet is not reachable, it falls back to opening the visitor's email app.
+  var ENDPOINT = '';
   var form = document.getElementById('enquiry');
   if (form) {
     if (/[?&]enquiry=exhibiting/.test(location.search) && form.elements.interest) form.elements.interest.value = 'Exhibiting';
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var f = form.elements;
+    var status = document.getElementById('form-status');
+    var say = function (t) { if (status) status.textContent = t; };
+    var sendByEmail = function (f) {
       var subject = 'LIV NEXT Saudi 2027 - ' + f.interest.value;
       var body = 'Name: ' + f.name.value +
         '\nOrganisation: ' + f.org.value +
@@ -91,8 +93,27 @@
         '\n\n' + f.message.value;
       window.location.href = 'mailto:info@connectspotexhibitions.com?subject=' +
         encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-      var status = document.getElementById('form-status');
-      if (status) status.textContent = 'Your email app should open with your details ready to send. If it does not, write to info@connectspotexhibitions.com.';
+      say('Your email app should open with your details ready to send. If it does not, write to info@connectspotexhibitions.com.');
+    };
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var f = form.elements;
+      if (!ENDPOINT) { sendByEmail(f); return; }
+      var btn = form.querySelector('button[type="submit"]');
+      var data = new URLSearchParams();
+      ['name', 'org', 'email', 'interest', 'message', 'website'].forEach(function (k) { data.append(k, f[k] ? f[k].value : ''); });
+      if (btn) btn.disabled = true;
+      say('Sending...');
+      fetch(ENDPOINT, { method: 'POST', mode: 'no-cors', body: data })
+        .then(function () {
+          form.reset();
+          if (btn) btn.disabled = false;
+          say('Thank you. Your enquiry has been received and our team will reply by email.');
+        })
+        .catch(function () {
+          if (btn) btn.disabled = false;
+          sendByEmail(f);
+        });
     });
   }
 })();
