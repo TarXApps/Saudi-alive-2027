@@ -79,6 +79,7 @@
   // Enquiry form: opens the visitor's email app with the details filled in.
   var form = document.getElementById('enquiry');
   if (form) {
+    if (/[?&]enquiry=exhibiting/.test(location.search) && form.elements.interest) form.elements.interest.value = 'Exhibiting';
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var f = form.elements;
