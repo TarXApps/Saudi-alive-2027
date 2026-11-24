@@ -78,7 +78,7 @@
 
   // Enquiry form: saved to the organiser's enquiries sheet (Exhibitors / Visitors tabs).
   // If the sheet is not reachable, it falls back to opening the visitor's email app.
-  var ENDPOINT = '';
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbzyQC5TbBDTli1vWJhPXQb6TGWuj96xLzxyIwMcWDu0EQ26yf_6JgRdO0YbZvSgWVhI/exec';
   var form = document.getElementById('enquiry');
   if (form) {
     if (/[?&]enquiry=exhibiting/.test(location.search) && form.elements.interest) form.elements.interest.value = 'Exhibiting';
