@@ -82,6 +82,7 @@
   var form = document.getElementById('enquiry');
   if (form) {
     if (/[?&]enquiry=exhibiting/.test(location.search) && form.elements.interest) form.elements.interest.value = 'Exhibiting';
+    if (/[?&]enquiry=sponsoring/.test(location.search) && form.elements.interest) form.elements.interest.value = 'Sponsoring';
     var status = document.getElementById('form-status');
     var say = function (t) { if (status) status.textContent = t; };
     var sendByEmail = function (f) {
