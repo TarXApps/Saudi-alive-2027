@@ -1,4 +1,4 @@
-/* LIV NEXT Saudi 2027: menu, scroll reveal and the enquiry form. */
+/* LIVNEXT Saudi 2027: menu, scroll reveal and the enquiry form. */
 (function () {
   var doc = document.documentElement;
   var btn = document.querySelector('.menu-btn');
@@ -82,10 +82,11 @@
   var form = document.getElementById('enquiry');
   if (form) {
     if (/[?&]enquiry=exhibiting/.test(location.search) && form.elements.interest) form.elements.interest.value = 'Exhibiting';
+    if (/[?&]enquiry=sponsoring/.test(location.search) && form.elements.interest) form.elements.interest.value = 'Sponsoring';
     var status = document.getElementById('form-status');
     var say = function (t) { if (status) status.textContent = t; };
     var sendByEmail = function (f) {
-      var subject = 'LIV NEXT Saudi 2027 - ' + f.interest.value;
+      var subject = 'LIVNEXT Saudi 2027 - ' + f.interest.value;
       var body = 'Name: ' + f.name.value +
         '\nOrganisation: ' + f.org.value +
         '\nEmail: ' + f.email.value +
