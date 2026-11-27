@@ -310,3 +310,10 @@ input:focus, select:focus, textarea:focus { outline: 3px solid rgba(179, 138, 60
 .tbl tbody tr:last-child > * { border-bottom: 0; }
 @media (max-width: 1000px) { .stats.six { grid-template-columns: repeat(3, 1fr); } .stats.six .stat:nth-child(n+4) { border-top: 1px solid var(--line); } .stats.six .stat:nth-child(4) { border-left: 0; } .stats.six .stat:nth-child(3) { border-left: 1px solid var(--line); } }
 @media (max-width: 560px) { .stats.six { grid-template-columns: repeat(2, 1fr); } .stats.six .stat { border-left: 1px solid var(--line); border-top: 1px solid var(--line); } .stats.six .stat:nth-child(odd) { border-left: 0; } .stats.six .stat:nth-child(-n+2) { border-top: 0; } }
+
+/* Hero date and venue */
+.hero .facts { display: flex; flex-wrap: wrap; gap: 1.2rem 2.4rem; margin-top: 1.8rem; padding-top: 1.4rem; border-top: 1px solid rgba(211, 173, 94, .55); max-width: 38rem; }
+.hero .facts li { display: flex; align-items: center; gap: .85rem; text-shadow: 0 2px 16px rgba(8, 42, 37, .6); }
+.hero .facts svg { flex: none; width: 2.2rem; height: 2.2rem; fill: none; stroke: var(--gold-soft); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.hero .facts b { display: block; font-family: var(--font-display); font-weight: 400; font-size: clamp(1.35rem, 2.4vw, 1.8rem); line-height: 1.15; color: #fff; }
+.hero .facts small { display: block; margin-top: .25rem; font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-soft); max-width: 15rem; line-height: 1.4; }
