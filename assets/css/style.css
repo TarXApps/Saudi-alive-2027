@@ -317,3 +317,15 @@ input:focus, select:focus, textarea:focus { outline: 3px solid rgba(179, 138, 60
 .hero .facts svg { flex: none; width: 2.2rem; height: 2.2rem; fill: none; stroke: var(--gold-soft); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .hero .facts b { display: block; font-family: var(--font-display); font-weight: 400; font-size: clamp(1.35rem, 2.4vw, 1.8rem); line-height: 1.15; color: #fff; }
 .hero .facts small { display: block; margin-top: .25rem; font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-soft); max-width: 15rem; line-height: 1.4; }
+
+/* Always-visible enquiry button in the header on phones and tablets */
+.hdr-cta { display: none; }
+.hdr-cta .short { display: none; }
+@media (max-width: 1200px) {
+  .hdr-cta { display: inline-flex; margin-left: auto; margin-right: .6rem; padding: .7rem 1rem; white-space: nowrap; letter-spacing: .12em; font-size: .74rem; border: 1px solid var(--gold); background: var(--gold); color: var(--ink-deep); }
+}
+@media (max-width: 480px) {
+  .hdr-cta .long { display: none; }
+  .hdr-cta .short { display: inline; }
+  .hdr-cta { padding: .7rem .9rem; margin-right: .5rem; }
+}
